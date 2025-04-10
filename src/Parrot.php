@@ -11,8 +11,6 @@ abstract class Parrot
     protected const float BASE_SPEED = 12.0;
 
     protected function __construct(
-        protected float $voltage,
-        protected bool $isNailed
     ) {
     }
 
