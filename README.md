@@ -1,6 +1,6 @@
 # Parrot Refactoring Kata
 
-See the [top level readme](../README.md) for general information about this exercise. This is the PHP version of the 
+This is the PHP version of the 
 Parrot Refactoring Kata. The Kata is fully functional, with a full test suite. The objective of this Kata is to 
 improve the code using Pol(l)ymorphism. The tests do not normally need to be changed.
 
