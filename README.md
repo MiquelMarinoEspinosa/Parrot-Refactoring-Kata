@@ -175,3 +175,10 @@ Check the `refactor` brach up!
 - Refactor pull `voltage` and `isNailed` super class fields down to `NorwegianBlueParrot`subclass
 - Refactor remove `__contruct` method superclass
 - Remove useless `testAnUnknownParrotWillWillThrownAnException` unit test
+- Considerations at this point of the refactor
+    - The `Parrot` superclass looks now more a proper `factory` than a super class. A refactor could be considered to transform the `Parrot` class into an `abstract factory` returning interfaces with the 2 methods to be implemented and implements the method into the subclasses
+    - Related with the first point, all parrots subclasses requires different fields to be constructed. May be is a good idea to change the client - unit test - to directly use the construct methods subclasses. More responsability to the client but at the end of the day it would make sense. Likely I would go for this last option
+    - In a real scenario with a lot of clients using the construct Parrot method, I would have gone with the first point. More than that, I would have place the factory construct in the original construct method of the parrot. In case of having few or just one client, I would advocate to pass to the responsability to the client
+    - The `NorwegianBlueParrot` has some logic in the methods which make me wonder whether applying a `decorator` or `strategy` pattern would refine the current implementation. However, it seems overkilled, not to mention create explosion of `NorwegianBlueParrot` subclasses which would have duplicated code accross the subclasses. At this point I have to give it a second thought.
+- Next step
+    - Refactor test to use classes `construct` directly and remove `Parrot` abstract class, may be turn it into an interface 
