@@ -12,5 +12,11 @@ final class AfricanParrot extends Parrot
     public function getCry(): string
     {
         return 'Sqaark!';
-    } 
+    }
+
+    #[Override]
+    public function getSpeed(): float
+    {
+        return max(0, $this->getBaseSpeed() - $this->getLoadFactor() * $this->numberOfCoconuts);
+    }
 }
