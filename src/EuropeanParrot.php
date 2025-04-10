@@ -8,6 +8,10 @@ use Override;
 
 final class EuropeanParrot extends Parrot
 {
+    protected function __construct()
+    {
+    }
+
     #[Override]
     public function getCry(): string
     {

@@ -27,8 +27,6 @@ abstract class Parrot
     ): self {
         return match ($type) {
             ParrotTypeEnum::EUROPEAN => new EuropeanParrot(
-                $voltage,
-                $isNailed
             ),
             ParrotTypeEnum::AFRICAN => new AfricanParrot(
                 $numberOfCoconuts

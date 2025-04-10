@@ -171,4 +171,5 @@ Check the `refactor` brach up!
 - Refactor extract `getBaseSpeed` super class method into a `constant`
 - Refactor remove `type` field superclass
 - Refactor pull `numberOfCoconuts` down to the `AfricanParrot` subclass and remove the rest of unusued fields
+- Refactor override `__construct` method at `EuropeanParrot` without fields
     
