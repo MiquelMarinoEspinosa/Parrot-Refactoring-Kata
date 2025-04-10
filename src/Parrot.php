@@ -11,7 +11,7 @@ class Parrot
     protected function __construct(
         private int $type,
         private int $numberOfCoconuts,
-        private float $voltage,
+        protected float $voltage,
         private bool $isNailed
     ) {
     }
@@ -69,7 +69,6 @@ class Parrot
     public function getCry(): string
     {
         return match ($this->type) {
-            ParrotTypeEnum::NORWEGIAN_BLUE => $this->voltage > 0 ? 'Bzzzzzz' : '...',
             default => throw new Exception('Should be unreachable'),
         };
     }

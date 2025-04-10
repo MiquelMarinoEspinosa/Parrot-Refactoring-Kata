@@ -142,8 +142,9 @@ Check the `refactor` brach up!
     - The `test` class, as a client of the `Parrot` class, needs to be change to use the new `factory method`
 - It has been identified the `getCry` method as the easiest to start the refactor introducing `polymorphism`
 - `European` parrot class would be introduced and instantiated at the `Parrot` factory method
-- Pull `european` `getCry` method logic down to `EuropeanParrot`
+- Refactor pull `european` `getCry` method logic down to `EuropeanParrot`
 - Introduce `African` parrot class and instantiate it at the `Parrot` factory method
 - Refactor `create` factory method to use the `match` operator instead of using multiple conditionals
-- Pull `african` `getCry` method logic down to `AfricanParrot`
+- Refactor pull `african` `getCry` method logic down to `AfricanParrot`
 - Introduce `NorwegianBlue` parrot class and instantiate it at the `Parrot` factory method
+- Refactor pull `norwegian blue` `getCry` method logic down to `NorwegianBlue`
