@@ -153,3 +153,4 @@ Check the `refactor` brach up!
         - TDD
             - Red: First add a unit test which fails when try to instiate an `unknown` parrot
             - Green: Fix the test throwing an exception when unknown parrot is tried to be created
+            - Blue: Refactor remove `getCry` implementation and make it abstract. The method will not be directly called from the parent class anymore which will also be `abstract` from now on

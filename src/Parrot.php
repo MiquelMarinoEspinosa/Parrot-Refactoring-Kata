@@ -6,7 +6,7 @@ namespace Parrot;
 
 use Exception;
 
-class Parrot
+abstract class Parrot
 {
     protected function __construct(
         private int $type,
@@ -58,15 +58,8 @@ class Parrot
         };
     }
 
-    /**
-     * @throws Exception
-     */
-    public function getCry(): string
-    {
-        return match ($this->type) {
-            default => throw new Exception('Should be unreachable'),
-        };
-    }
+    
+    abstract public function getCry(): string;
 
     private function getBaseSpeedWith(float $voltage): float
     {
