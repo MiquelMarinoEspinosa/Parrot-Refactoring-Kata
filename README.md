@@ -165,4 +165,5 @@ Check the `refactor` brach up!
     - Review and pull down the superclass `fields` that are just used for one kind of parrot
         - In those cases the `__construct` method should be override in the parrot subclasses
 - Refactor pull `loadFactor` method down to `AfricanParrot`
+- Refactor `loadFactor AfricanParrot method` convert it into `constant`
     

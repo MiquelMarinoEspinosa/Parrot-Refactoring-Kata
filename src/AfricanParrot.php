@@ -8,6 +8,8 @@ use Override;
 
 final class AfricanParrot extends Parrot 
 {
+    private const float LOAD_FACTOR = 9.0; 
+
     #[Override]
     public function getCry(): string
     {
@@ -17,11 +19,6 @@ final class AfricanParrot extends Parrot
     #[Override]
     public function getSpeed(): float
     {
-        return max(0, $this->getBaseSpeed() - $this->getLoadFactor() * $this->numberOfCoconuts);
-    }
-
-    private function getLoadFactor(): float
-    {
-        return 9.0;
+        return max(0, $this->getBaseSpeed() - self::LOAD_FACTOR * $this->numberOfCoconuts);
     }
 }
