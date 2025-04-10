@@ -48,15 +48,7 @@ abstract class Parrot
         };
     }
 
-    /**
-     * @throws Exception
-     */
-    public function getSpeed(): float
-    {
-        return match ($this->type) {
-            default => throw new Exception('Should be unreachable'),
-        };
-    }
+    abstract public function getSpeed(): float;
 
     abstract public function getCry(): string;
 

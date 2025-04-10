@@ -158,3 +158,4 @@ Check the `refactor` brach up!
     - Refactor pull `getSpeed european logic` from `Parrot` super class to `EuropeanParrot` subclass
     - Refactor pull `getSpeed african logic` from `Parrot` super class to `AfricanParrot` subclass
     - Refactor pull `getSpeed norwegian blue logic` from `Parrot` super class to `NorwegianBlueParrot` subclass
+    - Make the `getSpeed Parrot class` method abstract
