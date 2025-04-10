@@ -127,3 +127,16 @@ ps.bat
 
 ### Refactor
 Check the `refactor` brach up!
+
+### Refactor strategy
+- Since the current units tests has got a 100% coverage, the refactor is safe to begin :)
+- For every step through the reafactor, the unit tests would be executed and the coverage reviewed to guarantee the correctness of the process
+- The refactor would be focus on apply `polymorphism` to the code decoupling the different kind of parrots behaviour
+- The parrot super class will be responsible to create the different kind of parrots via a `factory method`
+- Chances are that the super class `Parrot` will become `abstract`
+
+### Refactor steps
+- Introduce the `factory method` at the `Parrot` class to instantiate the parrot
+    - In this first iteration, it will return the `Parrot` class itself
+    - The `__construct` class can be passed to `protected` to force the clients to use the new `factory method`
+    - The `test` class, as a client of the `Parrot` class, needs to be change to use the new `factory method`

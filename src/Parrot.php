@@ -8,15 +8,26 @@ use Exception;
 
 class Parrot
 {
-    public function __construct(
-        /**
-         * @var int ParrotTypeEnum
-         */
+    protected function __construct(
         private int $type,
         private int $numberOfCoconuts,
         private float $voltage,
         private bool $isNailed
     ) {
+    }
+
+    public static function create(
+        int $type,
+        int $numberOfCoconuts,
+        float $voltage,
+        bool $isNailed
+    ): self {
+        return new self(
+            $type,
+            $numberOfCoconuts,
+            $voltage,
+            $isNailed
+        );
     }
 
     /**
