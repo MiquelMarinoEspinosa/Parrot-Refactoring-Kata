@@ -144,3 +144,4 @@ Check the `refactor` brach up!
 - `European` parrot class would be introduced and instantiated at the `Parrot` factory method
 - Pull `european` `getCry` method logic down to `EuropeanParrot`
 - Introduce `African` parrot class and instantiated at the `Parrot` factory method
+- Refactor `create` factory method to use the `match` operator instead of using multiple conditionals

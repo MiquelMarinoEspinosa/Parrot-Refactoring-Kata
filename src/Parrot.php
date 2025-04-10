@@ -25,30 +25,26 @@ class Parrot
         float $voltage,
         bool $isNailed
     ): self {
-        if (ParrotTypeEnum::EUROPEAN === $type) {
-            return new EuropeanParrot(
+        return match ($type) {
+            ParrotTypeEnum::EUROPEAN => new EuropeanParrot(
                 $type,
                 $numberOfCoconuts,
                 $voltage,
                 $isNailed
-            );
-        }
-
-        if (ParrotTypeEnum::AFRICAN === $type) {
-            return new AfricanParrot(
+            ),
+            ParrotTypeEnum::AFRICAN => new AfricanParrot(
                 $type,
                 $numberOfCoconuts,
                 $voltage,
                 $isNailed
-            );
-        }
-
-        return new self(
-            $type,
-            $numberOfCoconuts,
-            $voltage,
-            $isNailed
-        );
+            ),
+            default => new self(
+                $type,
+                $numberOfCoconuts,
+                $voltage,
+                $isNailed
+            ),
+        };
     }
 
     /**
