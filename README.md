@@ -142,3 +142,4 @@ Check the `refactor` brach up!
     - The `test` class, as a client of the `Parrot` class, needs to be change to use the new `factory method`
 - It has been identified the `getCry` method as the easiest to start the refactor introducing `polymorphism`
 - `European` parrot class would be introduced and instantiated at the `Parrot` factory method
+- Pull `european` `getCry` method logic down to `EuropeanParrot`

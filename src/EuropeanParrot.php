@@ -4,7 +4,13 @@ declare(strict_types=1);
 
 namespace Parrot;
 
-class EuropeanParrot extends Parrot
+use Override;
+
+final class EuropeanParrot extends Parrot
 {
-    
+    #[Override]
+    public function getCry(): string
+    {
+        return 'Sqoork!';
+    } 
 }

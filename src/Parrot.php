@@ -5,6 +5,9 @@ declare(strict_types=1);
 namespace Parrot;
 
 use Exception;
+use PhpParser\Node\Expr\Exit_;
+
+use function PHPUnit\Framework\throwException;
 
 class Parrot
 {
@@ -58,7 +61,6 @@ class Parrot
     public function getCry(): string
     {
         return match ($this->type) {
-            ParrotTypeEnum::EUROPEAN => 'Sqoork!',
             ParrotTypeEnum::AFRICAN => 'Sqaark!',
             ParrotTypeEnum::NORWEGIAN_BLUE => $this->voltage > 0 ? 'Bzzzzzz' : '...',
             default => throw new Exception('Should be unreachable'),
