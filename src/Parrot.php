@@ -41,12 +41,7 @@ class Parrot
                 $voltage,
                 $isNailed
             ),
-            default => new self(
-                $type,
-                $numberOfCoconuts,
-                $voltage,
-                $isNailed
-            ),
+            default => throw new Exception('Should be unreachable'),
         };
     }
 

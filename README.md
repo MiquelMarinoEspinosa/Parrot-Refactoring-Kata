@@ -151,4 +151,5 @@ Check the `refactor` brach up!
 - At this point since all the parrot classes have been introduced and the `getCry` logic method has been pull down to the classes, this method could be defined as `abstract` making the `Parrot` class abstract and therefore not instantiable. Some change needed to be done before.
     - Add exception to the `default factory method option` and covered with tests
         - TDD
-            - Red: First add a unit test which fails when try to instiate an `unknown` parrot  
+            - Red: First add a unit test which fails when try to instiate an `unknown` parrot
+            - Green: Fix the test throwing an exception when unknown parrot is tried to be created
