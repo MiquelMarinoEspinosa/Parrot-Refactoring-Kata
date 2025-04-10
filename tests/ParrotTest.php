@@ -10,6 +10,12 @@ use PHPUnit\Framework\TestCase;
 
 final class ParrotTest extends TestCase
 {
+    public function testWhenCreateAnUnknownParrotShouldThrowAnException(): void
+    {
+        $this->expectExceptionMessage('Should be unreachable');
+        Parrot::create(-1, 0, 0, false);
+    }
+
     public function testSpeedOfEuropeanParrot(): void
     {
         $parrot = Parrot::create(ParrotTypeEnum::EUROPEAN, 0, 0, false);

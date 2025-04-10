@@ -148,3 +148,7 @@ Check the `refactor` brach up!
 - Refactor pull `african` `getCry` method logic down to `AfricanParrot`
 - Introduce `NorwegianBlue` parrot class and instantiate it at the `Parrot` factory method
 - Refactor pull `norwegian blue` `getCry` method logic down to `NorwegianBlue`
+- At this point since all the parrot classes have been introduced and the `getCry` logic method has been pull down to the classes, this method could be defined as `abstract` making the `Parrot` class abstract and therefore not instantiable. Some change needed to be done before.
+    - Add exception to the `default factory method option` and covered with tests
+        - TDD
+            - Red: First add a unit test which fails when try to instiate an `unknown` parrot  
