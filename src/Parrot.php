@@ -34,6 +34,15 @@ class Parrot
             );
         }
 
+        if (ParrotTypeEnum::AFRICAN === $type) {
+            return new AfricanParrot(
+                $type,
+                $numberOfCoconuts,
+                $voltage,
+                $isNailed
+            );
+        }
+
         return new self(
             $type,
             $numberOfCoconuts,

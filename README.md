@@ -143,3 +143,4 @@ Check the `refactor` brach up!
 - It has been identified the `getCry` method as the easiest to start the refactor introducing `polymorphism`
 - `European` parrot class would be introduced and instantiated at the `Parrot` factory method
 - Pull `european` `getCry` method logic down to `EuropeanParrot`
+- Introduce `African` parrot class and instantiated at the `Parrot` factory method
