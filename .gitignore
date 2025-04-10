@@ -8,3 +8,4 @@
 composer.phar
 /coverage
 .vscode
+launch.json
