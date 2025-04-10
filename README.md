@@ -169,4 +169,5 @@ Check the `refactor` brach up!
 - Refactor pull `getBaseSpeedWith` super class method down to `NorwegianBlueParrot` subclass
 - Refactor inline method for `getBaseSpeedWith` at `NorwegianBlueParrot` 
 - Refactor extract `getBaseSpeed` super class method into a `constant`
+- Refactor remove `type` field superclass
     
