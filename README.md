@@ -163,5 +163,6 @@ Check the `refactor` brach up!
     - Convert `methods` that just return scalar values into `constants`
     - Review and pull down the superclass `methods` that are just used for one kind of parrot
     - Review and pull down the superclass `fields` that are just used for one kind of parrot
-        - In those cases the `__construct` method should be override in the parrot subclasses  
+        - In those cases the `__construct` method should be override in the parrot subclasses
+- Refactor pull `loadFactor` method down to `AfricanParrot`
     
