@@ -17,6 +17,6 @@ final class EuropeanParrot extends Parrot
     #[Override]
     public function getSpeed(): float
     {
-        return $this->getBaseSpeed();
+        return self::BASE_SPEED;
     }
 }

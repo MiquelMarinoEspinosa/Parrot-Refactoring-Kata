@@ -168,4 +168,5 @@ Check the `refactor` brach up!
 - Refactor `loadFactor AfricanParrot method` convert it into `constant`
 - Refactor pull `getBaseSpeedWith` super class method down to `NorwegianBlueParrot` subclass
 - Refactor inline method for `getBaseSpeedWith` at `NorwegianBlueParrot` 
+- Refactor extract `getBaseSpeed` super class method into a `constant`
     

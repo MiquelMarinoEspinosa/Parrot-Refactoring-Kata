@@ -19,6 +19,6 @@ final class AfricanParrot extends Parrot
     #[Override]
     public function getSpeed(): float
     {
-        return max(0, $this->getBaseSpeed() - self::LOAD_FACTOR * $this->numberOfCoconuts);
+        return max(0, self::BASE_SPEED - self::LOAD_FACTOR * $this->numberOfCoconuts);
     }
 }

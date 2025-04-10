@@ -8,6 +8,8 @@ use Exception;
 
 abstract class Parrot
 {
+    protected const float BASE_SPEED = 12.0;
+
     protected function __construct(
         private int $type,
         protected int $numberOfCoconuts,
@@ -51,9 +53,4 @@ abstract class Parrot
     abstract public function getSpeed(): float;
 
     abstract public function getCry(): string;
-
-    protected function getBaseSpeed(): float
-    {
-        return 12.0;
-    }
 }
