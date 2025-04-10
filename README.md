@@ -155,5 +155,6 @@ Check the `refactor` brach up!
             - Green: Fix the test throwing an exception when unknown parrot is tried to be created
             - Blue: Refactor remove `getCry` implementation and make it abstract. The method will not be directly called from the parent class anymore which will also be `abstract` from now on
 - At this point we are ready to continue with pulling `Parrot` super class logic down to the subclasses refactoring the `getSpeed` method
-- Refactor pull `getSpeed european logic` from `Parrot` super class to `EuropeanParrot` subclass
-- Refactor pull `getSpeed african logic` from `Parrot` super class to `AfricanParrot` subclass
+    - Refactor pull `getSpeed european logic` from `Parrot` super class to `EuropeanParrot` subclass
+    - Refactor pull `getSpeed african logic` from `Parrot` super class to `AfricanParrot` subclass
+    - Refactor pull `getSpeed norwegian blue logic` from `Parrot` super class to `NorwegianBlueParrot` subclass

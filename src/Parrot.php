@@ -12,7 +12,7 @@ abstract class Parrot
         private int $type,
         protected int $numberOfCoconuts,
         protected float $voltage,
-        private bool $isNailed
+        protected bool $isNailed
     ) {
     }
 
@@ -54,14 +54,13 @@ abstract class Parrot
     public function getSpeed(): float
     {
         return match ($this->type) {
-            ParrotTypeEnum::NORWEGIAN_BLUE => $this->isNailed ? 0 : $this->getBaseSpeedWith($this->voltage),
             default => throw new Exception('Should be unreachable'),
         };
     }
 
     abstract public function getCry(): string;
 
-    private function getBaseSpeedWith(float $voltage): float
+    protected function getBaseSpeedWith(float $voltage): float
     {
         return min(24.0, $voltage * $this->getBaseSpeed());
     }
