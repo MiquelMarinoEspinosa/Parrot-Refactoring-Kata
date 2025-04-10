@@ -159,3 +159,9 @@ Check the `refactor` brach up!
     - Refactor pull `getSpeed african logic` from `Parrot` super class to `AfricanParrot` subclass
     - Refactor pull `getSpeed norwegian blue logic` from `Parrot` super class to `NorwegianBlueParrot` subclass
     - Make the `getSpeed Parrot class` method abstract
+- At this point of the refactor both the `getSpeed` and the `getCry` are `abstract` at the super class. The previous logic has been pull down to the new parrot subclasses. During the refactor has been detected some improvements related to certain data as well as methods use by certain parrots but not all of them. It would be interesting to not have common logic share across the parrots when the logic is used just for one kind for instance. Here there are some refactor suggestions as next steps:
+    - Convert `methods` that just return scalar values into `constants`
+    - Review and pull down the superclass `methods` that are just used for one kind of parrot
+    - Review and pull down the superclass `fields` that are just used for one kind of parrot
+        - In those cases the `__construct` method should be override in the parrot subclasses  
+    
