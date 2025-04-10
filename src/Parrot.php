@@ -11,7 +11,6 @@ abstract class Parrot
     protected const float BASE_SPEED = 12.0;
 
     protected function __construct(
-        protected int $numberOfCoconuts,
         protected float $voltage,
         protected bool $isNailed
     ) {
@@ -28,17 +27,13 @@ abstract class Parrot
     ): self {
         return match ($type) {
             ParrotTypeEnum::EUROPEAN => new EuropeanParrot(
-                $numberOfCoconuts,
                 $voltage,
                 $isNailed
             ),
             ParrotTypeEnum::AFRICAN => new AfricanParrot(
-                $numberOfCoconuts,
-                $voltage,
-                $isNailed
+                $numberOfCoconuts
             ),
             ParrotTypeEnum::NORWEGIAN_BLUE => new NorwegianBlueParrot(
-                $numberOfCoconuts,
                 $voltage,
                 $isNailed
             ),

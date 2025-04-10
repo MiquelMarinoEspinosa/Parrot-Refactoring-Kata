@@ -170,4 +170,5 @@ Check the `refactor` brach up!
 - Refactor inline method for `getBaseSpeedWith` at `NorwegianBlueParrot` 
 - Refactor extract `getBaseSpeed` super class method into a `constant`
 - Refactor remove `type` field superclass
+- Refactor pull `numberOfCoconuts` down to the `AfricanParrot` subclass and remove the rest of unusued fields
     

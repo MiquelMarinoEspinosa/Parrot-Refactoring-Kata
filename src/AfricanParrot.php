@@ -8,6 +8,11 @@ use Override;
 
 final class AfricanParrot extends Parrot 
 {
+    protected function __construct(
+        private int $numberOfCoconuts
+    ){
+    }
+
     private const float LOAD_FACTOR = 9.0; 
 
     #[Override]
