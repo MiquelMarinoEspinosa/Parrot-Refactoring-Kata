@@ -166,5 +166,6 @@ Check the `refactor` brach up!
         - In those cases the `__construct` method should be override in the parrot subclasses
 - Refactor pull `loadFactor` method down to `AfricanParrot`
 - Refactor `loadFactor AfricanParrot method` convert it into `constant`
-- Refactor pull `getBaseSpeedWith` super class method down to `NorwegianBlueParrot` subclass 
+- Refactor pull `getBaseSpeedWith` super class method down to `NorwegianBlueParrot` subclass
+- Refactor inline method for `getBaseSpeedWith` at `NorwegianBlueParrot` 
     
