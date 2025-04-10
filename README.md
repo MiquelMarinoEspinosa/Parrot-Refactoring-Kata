@@ -172,5 +172,6 @@ Check the `refactor` brach up!
 - Refactor remove `type` field superclass
 - Refactor pull `numberOfCoconuts` down to the `AfricanParrot` subclass and remove the rest of unusued fields
 - Refactor override `__construct` method at `EuropeanParrot` without fields
-- Refactor pull `voltage` and `isNailed` super class fields down to `NorwegianBlueParrot`subclass 
+- Refactor pull `voltage` and `isNailed` super class fields down to `NorwegianBlueParrot`subclass
+- Refactor remove `__contruct` method superclass
     
