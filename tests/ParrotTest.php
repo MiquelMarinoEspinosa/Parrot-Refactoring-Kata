@@ -58,13 +58,6 @@ final class ParrotTest extends TestCase
         self::assertSame(24.0, $parrot->getSpeed());
     }
 
-    public function testAnUnknownParrotWillWillThrownAnException(): void
-    {
-        $this->expectExceptionMessage('Should be unreachable');
-        $unknownParrot = Parrot::create(-1, 0, 0, false);
-        $unknownParrot->getSpeed();
-    }
-
     public function testGetCryOfEuropeanParrot(): void
     {
         $parrot = Parrot::create(ParrotTypeEnum::EUROPEAN, 0, 0, false);

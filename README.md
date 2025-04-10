@@ -174,4 +174,4 @@ Check the `refactor` brach up!
 - Refactor override `__construct` method at `EuropeanParrot` without fields
 - Refactor pull `voltage` and `isNailed` super class fields down to `NorwegianBlueParrot`subclass
 - Refactor remove `__contruct` method superclass
-    
+- Remove useless `testAnUnknownParrotWillWillThrownAnException` unit test
