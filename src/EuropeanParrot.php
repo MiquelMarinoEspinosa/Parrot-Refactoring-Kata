@@ -12,5 +12,11 @@ final class EuropeanParrot extends Parrot
     public function getCry(): string
     {
         return 'Sqoork!';
-    } 
+    }
+
+    #[Override]
+    public function getSpeed(): float
+    {
+        return $this->getBaseSpeed();
+    }
 }

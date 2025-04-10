@@ -16,6 +16,9 @@ abstract class Parrot
     ) {
     }
 
+    /**
+     * @throws Exception
+     */
     public static function create(
         int $type,
         int $numberOfCoconuts,
@@ -51,7 +54,6 @@ abstract class Parrot
     public function getSpeed(): float
     {
         return match ($this->type) {
-            ParrotTypeEnum::EUROPEAN => $this->getBaseSpeed(),
             ParrotTypeEnum::AFRICAN => max(0, $this->getBaseSpeed() - $this->getLoadFactor() * $this->numberOfCoconuts),
             ParrotTypeEnum::NORWEGIAN_BLUE => $this->isNailed ? 0 : $this->getBaseSpeedWith($this->voltage),
             default => throw new Exception('Should be unreachable'),
@@ -71,7 +73,7 @@ abstract class Parrot
         return 9.0;
     }
 
-    private function getBaseSpeed(): float
+    protected function getBaseSpeed(): float
     {
         return 12.0;
     }
