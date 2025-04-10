@@ -5,9 +5,6 @@ declare(strict_types=1);
 namespace Parrot;
 
 use Exception;
-use PhpParser\Node\Expr\Exit_;
-
-use function PHPUnit\Framework\throwException;
 
 class Parrot
 {
@@ -33,6 +30,12 @@ class Parrot
                 $isNailed
             ),
             ParrotTypeEnum::AFRICAN => new AfricanParrot(
+                $type,
+                $numberOfCoconuts,
+                $voltage,
+                $isNailed
+            ),
+            ParrotTypeEnum::NORWEGIAN_BLUE => new NorwegianBlueParrot(
                 $type,
                 $numberOfCoconuts,
                 $voltage,
