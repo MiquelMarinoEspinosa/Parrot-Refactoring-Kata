@@ -2,8 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Parrot;
+namespace Parrot\Tests;
 
+use Parrot\EuropeanParrot;
 use PHPUnit\Framework\TestCase;
 
 final class EuropeanParrotTest extends TestCase 

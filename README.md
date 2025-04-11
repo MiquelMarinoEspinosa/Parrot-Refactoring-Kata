@@ -186,3 +186,4 @@ Check the `refactor` brach up!
 - Refactor replace `factory method` to `construct` method at `EuropeanParrotTest`
 - Refactor extract `african parrot tests` into a new class called `AfricanParrotTest`
 - Refactor `AfricanParrotTest` to use `AfricanParrot construct` method instead of `Parrot factory method`
+- Fix `EuropeanParrotTest` namespace
