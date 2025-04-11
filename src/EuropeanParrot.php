@@ -6,7 +6,7 @@ namespace Parrot;
 
 use Override;
 
-final class EuropeanParrot extends Parrot
+final class EuropeanParrot implements Parrot
 {
     public function __construct()
     {

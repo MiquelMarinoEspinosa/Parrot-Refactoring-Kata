@@ -6,7 +6,7 @@ namespace Parrot;
 
 use Override;
 
-final class NorwegianBlueParrot extends Parrot 
+final class NorwegianBlueParrot implements Parrot 
 {
     public function __construct(
         private float $voltage,

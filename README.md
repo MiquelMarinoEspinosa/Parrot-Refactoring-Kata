@@ -190,3 +190,4 @@ Check the `refactor` brach up!
 - Refactor extract `norwegian parrot tests` into a new class called `NorwegianBlueParrotTest`
 - Refactor `NorwegianBlueParrotTest` class to use `NorwegianBlueParrot construct` instead of `Parrot factory method`
 - Refactor remove `Parrot factory method`, `ParrotTest class` and `ParrotTypeEnum`
+- Refactor trasnform `Parrot` abstract class into an interface

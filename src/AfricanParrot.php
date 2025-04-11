@@ -6,7 +6,7 @@ namespace Parrot;
 
 use Override;
 
-final class AfricanParrot extends Parrot 
+final class AfricanParrot implements Parrot 
 {
     public function __construct(
         private int $numberOfCoconuts
