@@ -10,13 +10,13 @@ final class EuropeanParrotTest extends TestCase
 {
     public function testGetCryOfEuropeanParrot(): void
     {
-        $parrot = Parrot::create(ParrotTypeEnum::EUROPEAN, 0, 0, false);
+        $parrot = new EuropeanParrot();
         self::assertSame('Sqoork!', $parrot->getCry());
     }
 
     public function testSpeedOfEuropeanParrot(): void
     {
-        $parrot = Parrot::create(ParrotTypeEnum::EUROPEAN, 0, 0, false);
+        $parrot = new EuropeanParrot();
         self::assertSame(12.0, $parrot->getSpeed());
     }
 }
