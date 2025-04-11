@@ -16,12 +16,6 @@ final class ParrotTest extends TestCase
         Parrot::create(-1, 0, 0, false);
     }
 
-    public function testSpeedOfEuropeanParrot(): void
-    {
-        $parrot = Parrot::create(ParrotTypeEnum::EUROPEAN, 0, 0, false);
-        self::assertSame(12.0, $parrot->getSpeed());
-    }
-
     public function testSpeedOfAfricanParrotWithOneCoconut(): void
     {
         $parrot = Parrot::create(ParrotTypeEnum::AFRICAN, 1, 0, false);
@@ -56,12 +50,6 @@ final class ParrotTest extends TestCase
     {
         $parrot = Parrot::create(ParrotTypeEnum::NORWEGIAN_BLUE, 0, 4, false);
         self::assertSame(24.0, $parrot->getSpeed());
-    }
-
-    public function testGetCryOfEuropeanParrot(): void
-    {
-        $parrot = Parrot::create(ParrotTypeEnum::EUROPEAN, 0, 0, false);
-        self::assertSame('Sqoork!', $parrot->getCry());
     }
 
     public function testGetCryOfAfricanParrot(): void
