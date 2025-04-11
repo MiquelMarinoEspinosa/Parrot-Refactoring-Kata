@@ -191,3 +191,15 @@ Check the `refactor` brach up!
 - Refactor `NorwegianBlueParrotTest` class to use `NorwegianBlueParrot construct` instead of `Parrot factory method`
 - Refactor remove `Parrot factory method`, `ParrotTest class` and `ParrotTypeEnum`
 - Refactor trasnform `Parrot` abstract class into an interface
+- Final considerations
+    - At this point the refactor can be considered as finish
+    - The code became from an initial unique coupled `Parrot` class to different parrot subclasses related via an interface
+    - The strategy followed was create subclasses which extends from the initial `Parrot` class pulling its specific logic down to the new subclasses making the `Parrot` methods class as `abstract`
+    - To instantiate the new subclasses the `factory method pattern` has been applied to the `Parrot` class
+    - Once the `Parrot` original class has not more logic than the `abstract` methods and the factory method, has been turned into an `interface`
+    - The unit tests also have also been split by subclass and it has been used their `construct` methods rather the `factory method` parent class since each parrot require different parameters to be build
+    - Furhter considerations
+        - It might be that the `interface` can also be removed
+        - The `BASE_SPEED` constant is not use for all the parrots. It might be placed to the parrots which use the value even though that would introduce small code duplication
+        - `NorwegianBlueParrot` method's logic has some conditions that can be considered to be extracted somehow with other pattern like `strategy`. Nevertheless, the code now is small. Therefore, adding an extra pattern might add some overhead to the implementation. It has been decided to leave it as it is now.
+- It has been a good refactor :)     
