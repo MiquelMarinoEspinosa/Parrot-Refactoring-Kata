@@ -8,7 +8,7 @@ use Override;
 
 final class NorwegianBlueParrot extends Parrot 
 {
-    protected function __construct(
+    public function __construct(
         private float $voltage,
         private bool $isNailed
     ){
