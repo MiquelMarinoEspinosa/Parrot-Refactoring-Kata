@@ -184,3 +184,4 @@ Check the `refactor` brach up!
     - Refactor test to use classes `construct` directly and remove `Parrot` abstract class, may be turn it into an interface
 - Refactor extract `european parrot tests` into a new class called `EuropeanParrotTest`
 - Refactor replace `factory method` to `construct` method at `EuropeanParrotTest`
+- Refactor extect `african parrot tests` into a new class called `AfricanParrotTest`
