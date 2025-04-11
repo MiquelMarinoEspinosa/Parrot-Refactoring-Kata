@@ -8,7 +8,7 @@ use Override;
 
 final class AfricanParrot extends Parrot 
 {
-    protected function __construct(
+    public function __construct(
         private int $numberOfCoconuts
     ){
     }
